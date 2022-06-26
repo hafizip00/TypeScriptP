@@ -5,3 +5,8 @@ let level;
 
 let numbers:number[] = []
 let user : [number , string] = [1 , "Mosh"];
+
+enum sizes {small = 0 , medium , large}
+
+const mysize : sizes = sizes.medium;
+console.log(mysize);
