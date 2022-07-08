@@ -10,3 +10,14 @@ enum sizes {small = 0 , medium , large}
 
 const mysize : sizes = sizes.medium;
 console.log(mysize);
+
+//Functions
+
+function calculateTax (income : number , taxYear = 2020) {
+    if (taxYear < 2022) {
+        return income + 50
+    }
+    return income * 1.3
+}
+
+calculateTax(30_000)

@@ -13,4 +13,11 @@ var sizes;
 })(sizes || (sizes = {}));
 const mysize = sizes.medium;
 console.log(mysize);
+function calculateTax(income, taxYear = 2020) {
+    if (taxYear < 2022) {
+        return income + 50;
+    }
+    return income * 1.3;
+}
+calculateTax(30000);
 //# sourceMappingURL=index.js.map
