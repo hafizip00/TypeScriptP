@@ -37,3 +37,21 @@ withb(3 , 5 , (res) => {
 })
 
 
+let useriput : unknown;
+let userName : string;
+
+useriput = 'MAX'
+if (typeof useriput === 'string') {
+    userName = useriput;   
+}
+// you  don't Know Waht type it is 
+
+function errorGene(message : string , code : number) : never{
+    throw {message : message , errcode : code}
+    // here it breaks the code  it is usefu lwhen you make custom errorntypes
+}
+
+// if some function never returns any value then it is nenver type
+errorGene("ERROR ACCURED" , 500);
+
+
